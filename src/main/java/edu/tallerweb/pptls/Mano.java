@@ -26,20 +26,21 @@ public class Mano {
 					|| valorForma == 2 && otra.valorForma == 1 || valorForma == 2 && otra.valorForma == 3 
 					|| valorForma == 3 && otra.valorForma == 4 || valorForma == 3 && otra.valorForma == 1 
 					|| valorForma == 4 && otra.valorForma == 2 || valorForma == 4 && otra.valorForma == 0 )
-					   
+		   {
 					   return Resultado.GANA;
-				   
+		   }	   
 				   if( valorForma == 0 && otra.valorForma == 4 || valorForma == 0 && otra.valorForma == 1 
 						|| valorForma == 1 && otra.valorForma == 2 || valorForma == 1 && otra.valorForma == 3 
 						|| valorForma == 2 && otra.valorForma == 4 || valorForma == 2 && otra.valorForma == 0 
 						|| valorForma == 3 && otra.valorForma == 0 || valorForma == 3 && otra.valorForma == 2 
 						|| valorForma == 4 && otra.valorForma == 3 || valorForma == 4 && otra.valorForma == 1 )
-					   
+				   {		   
 					   return Resultado.PIERDE;
-				   
+				   }
 				   else
-				       return Resultado.EMPATA;
+				   {   return Resultado.EMPATA;
 				}
+				   
 	
-
+	}
 }
